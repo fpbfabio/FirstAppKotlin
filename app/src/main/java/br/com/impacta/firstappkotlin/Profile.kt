@@ -5,7 +5,7 @@ data class Profile(
     val age: Int,
     val location: String,
     val coverImage: Photo,
-    val photos: List<Photo>,
+    val photos: MutableList<Photo>,
     val curiosities: List<Curiosity>
 )
 
