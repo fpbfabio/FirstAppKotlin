@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">FirstAppKotlin</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="sign_in">entrar</string>
+    <string name="password">Senha</string>
+    <string name="email">E-mail</string>
+    <string name="login">login</string>
+    <string name="show_curiosities">Mostrar curiosidades</string>
+    <string name="show_photos">Mostrar fotos</string>
+    <string name="name">Nome</string>
+    <string name="age">Idade</string>
+    <string name="location">Localização</string>
+</resources>
