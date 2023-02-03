@@ -6,9 +6,10 @@
     <string name="password">Senha</string>
     <string name="email">E-mail</string>
     <string name="login">login</string>
-    <string name="show_curiosities">Mostrar curiosidades</string>
-    <string name="show_photos">Mostrar fotos</string>
+    <string name="show_curiosities">Curiosidades</string>
+    <string name="show_photos">Fotos</string>
     <string name="name">Nome</string>
     <string name="age">Idade</string>
     <string name="location">Localização</string>
+    <string name="logout">Logout</string>
 </resources>

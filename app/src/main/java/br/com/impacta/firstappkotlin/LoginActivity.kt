@@ -16,6 +16,10 @@ class LoginActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
+        if (isSigned) {
+            navigateToProfile()
+            return
+        }
         buttonMain.setOnClickListener {
             if (
                 validateEmailAt() &&
@@ -23,6 +27,7 @@ class LoginActivity : AppCompatActivity() {
                 validatePasswordNumberAndChar() &&
                 validatePasswordUpperCase()
             ) {
+                isSigned = true
                 navigateToProfile()
             } else {
                 Toast.makeText(this, "Ops algo deu errado\nTente novamente", Toast.LENGTH_LONG)

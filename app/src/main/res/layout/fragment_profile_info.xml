@@ -18,7 +18,7 @@
             android:padding="@dimen/spacing_3x"
             android:layout_height="match_parent">
             <ImageView
-                android:id="@+id/profile_info_cover_image_view"
+                android:id="@+id/image_view_profile_cover"
                 android:layout_width="match_parent"
                 android:layout_height="130dp"
                 android:scaleType="centerCrop"
@@ -27,7 +27,7 @@
                 app:layout_constraintTop_toTopOf="parent"/>
 
             <TextView
-                android:id="@+id/profile_info_name_text_view"
+                android:id="@+id/text_view_profile_name"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/spacing_2x"
@@ -35,31 +35,31 @@
                 android:textSize="@dimen/font_4x"
                 android:textStyle="bold"
                 android:textColor="@color/black"
-                app:layout_constraintTop_toBottomOf="@id/profile_info_cover_image_view"/>
+                app:layout_constraintTop_toBottomOf="@id/image_view_profile_cover"/>
 
             <TextView
-                android:id="@+id/profile_info_age_text_view"
+                android:id="@+id/text_view_profile_age"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/spacing_3x"
                 android:text="@string/age"
                 android:textSize="@dimen/font_3x"
                 android:textColor="@color/black"
-                app:layout_constraintTop_toBottomOf="@id/profile_info_name_text_view"/>
+                app:layout_constraintTop_toBottomOf="@id/text_view_profile_name"/>
 
             <TextView
-                android:id="@+id/profile_info_location_text_view"
+                android:id="@+id/text_view_profile_location"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/spacing_3x"
                 android:text="@string/location"
                 android:textSize="@dimen/font_3x"
                 android:textColor="@color/black"
-                app:layout_constraintTop_toBottomOf="@id/profile_info_age_text_view"/>
+                app:layout_constraintTop_toBottomOf="@id/text_view_profile_age"/>
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.cardview.widget.CardView>
     <androidx.cardview.widget.CardView
-        android:id="@+id/profile_info_show_photos_view"
+        android:id="@+id/card_view_profile_photos"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginVertical="@dimen/spacing_3x"
@@ -78,13 +78,13 @@
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
-        android:id="@+id/profile_info_show_curiosities_view"
+        android:id="@+id/card_view_profile_curiosities"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/spacing_3x"
-        app:layout_constraintStart_toEndOf="@id/profile_info_show_photos_view"
-        app:layout_constraintTop_toTopOf="@id/profile_info_show_photos_view"
-        app:layout_constraintBottom_toBottomOf="@id/profile_info_show_photos_view">
+        app:layout_constraintStart_toEndOf="@id/card_view_profile_photos"
+        app:layout_constraintTop_toTopOf="@id/card_view_profile_photos"
+        app:layout_constraintBottom_toBottomOf="@id/card_view_profile_photos">
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
@@ -92,6 +92,24 @@
             android:padding="@dimen/spacing_3x"
             android:textSize="@dimen/font_3x"
             android:text="@string/show_curiosities"
+            android:textColor="@color/black"/>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view_profile_logout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/spacing_3x"
+        app:layout_constraintStart_toEndOf="@id/card_view_profile_curiosities"
+        app:layout_constraintTop_toTopOf="@id/card_view_profile_photos"
+        app:layout_constraintBottom_toBottomOf="@id/card_view_profile_photos">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textStyle="bold"
+            android:padding="@dimen/spacing_3x"
+            android:textSize="@dimen/font_3x"
+            android:text="@string/logout"
             android:textColor="@color/black"/>
     </androidx.cardview.widget.CardView>
 </androidx.constraintlayout.widget.ConstraintLayout>
